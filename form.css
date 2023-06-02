@@ -1,0 +1,288 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ h1 {
+  text-align: center;
+}
+
+
+ .main {
+    /* max-width: 700px; */
+    height: 1000px;
+   width: 1000px;
+   /* height: 1000px;
+   width: 1000px; */
+   background-color: #fff;
+   padding: 25px 30px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+ }
+
+ .main.title {
+   font-size: 25px;
+   font-weight: 500;
+   position: relative;
+ }
+
+ .main .title::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 30px;
+   border-radius: 5px;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+.user-details {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 20px 0 12px 0;
+ }
+
+ .user-details .input-box {
+   margin-bottom: 15px;
+   width: calc(100% / 2 - 20px);
+ }
+
+ .input-box span.details {
+   display: block;
+   font-weight: 500;
+   margin-bottom: 5px;
+ }
+
+ .user-details .input-box  {
+   height: 45px;
+   width: 100%;
+   outline: none;
+   font-size: 16px;
+   border-radius: 5px;
+   padding-left: 15px;
+   border: 1px solid #ccc;
+   border-bottom-width: 2px;
+   transition: all 0.3s ease;
+ }
+
+ .user-details .input-box input:focus,
+ .user-details .input-box input:valid {
+   border-color: #9b59b6;
+ }
+
+ .gender-details {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .Caste.Caste {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .Religion {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .WPC {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .CN {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .ACN {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .DOB {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .MN {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .FN {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .Name {
+   font-size: 20px;
+   font-weight: 500;
+ }
+ .Address {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ .class {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .all {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .category.c1 {
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ #enterright {float: left; width: 50%; background-color:floralwhite; color:black;}
+ #enterleft {float: left; width: 50%; background-color: floralwhite; color:black;}
+
+
+ Caste.category {
+   display: flex;
+   width: 80%;
+   margin: 14px 0;
+   justify-content: space-between;
+ }
+
+ .category1 {
+   display: flex;
+   width: 80%;
+   margin: 14px 0;
+   justify-content: space-between;
+ }
+
+ .category label {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+
+ .category1 label {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+
+ .category label .dot {
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   margin-right: 10px;
+   background: #d9d9d9;
+   border: 5px solid transparent;
+   transition: all 0.3s ease;
+ }
+
+ #dot-10:checked~.category label .ten,
+ #dot-11:checked~.category label .eleven,
+ #dot-12:checked~.category label .twelve {
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
+ .category1 label .dot {
+   height: 18px;
+   width: 18px;
+   border-radius: 50%;
+   margin-right: 10px;
+   background: #d9d9d9;
+   border: 5px solid transparent;
+   transition: all 0.3s ease;
+ }
+
+ #dot-1:checked~.category1 label .one,
+ #dot-2:checked~.category1 label .two,
+ #dot-3:checked~.category1 label .three,
+ #dot-4:checked~.category1 label .four,
+ #dot-5:checked~.category1 label .five {
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+
+ input[type="radio"] {
+   display: none;
+ }
+
+ .button {
+   height: 55px;
+   margin: 45px;
+ }
+
+ .button input {
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+
+ .button input:hover {
+   /* transform: scale(0.99); */
+   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+ }
+
+ @media(max-width: 584px) {
+   .main {
+     max-width: 100%;
+   }
+
+   .user-details .input-box {
+     margin-bottom: 15px;
+     width: 100%;
+   }
+
+   .category {
+     width: 100%;
+   }
+
+   .category1 {
+     width: 100%;
+   }
+
+   .content.user-details {
+     max-height: 300px;
+     overflow-y: scroll;
+   }
+
+   .user-details::-webkit-scrollbar {
+     width: 5px;
+   }
+ }
+
+ @media(max-width: 459px) {
+   .main .content .category {
+     flex-direction: column;
+   } 
+
+    @media(max-width: 459px) {
+     .main .content .category1 {
+       flex-direction: column;
+     }
+   }
+ 
+  }

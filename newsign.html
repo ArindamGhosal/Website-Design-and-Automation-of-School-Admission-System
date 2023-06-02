@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="newsign.css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+
+    <style>
+      body {
+        overflow: auto;
+        -webkit-overflow-scrolling: auto;
+      }
+      /* hide scrollbar for Firefox */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background-color: transparent;
+      }
+    </style>
+  
+<div>
+
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+      
+        <div class="nav-title">
+          <img src="./image/logo1.png"id="imgk" >
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="index_home.html" >Home</a>
+        <a href="aboutus_index.html">About Us</a>
+        <a>Admission</a>
+        <a >Login</a>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      
+      <div class="forms-container">
+        <div class="signin-signup">
+
+          <!--Sign in-->
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Email" id="signin_email"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="signin_password"/>
+            </div>
+            <p id="error_message"></p>
+            <input type="submit" value="Login" class="btn solid" id="signin" onclick="login()"/>
+            <input type="submit" value="Save" class="btn solid1" id="savedata" onclick="saveData()"/>
+            <input type="submit" value="Update" class="btn solid1" id="uddate" onclick="readData()"/>
+            
+        
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              
+              
+              <a href="#" class="social-icon">
+                <i class="fab fa-google" onclick="loginWithGoogle"></i>
+              </a>
+              
+            </div>
+
+            <!--Sign in end-->
+
+          </form>
+
+          <!--Sign up-->
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+           
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" id="signup_email"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" id="signup_password"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" id="signup"  onclick="register()"/>
+            <input type="submit" value="Delete" class="btn solid" id="delete" onclick="deleteData()"/>
+          
+           
+            <p class="social-text">Or Sign up with social platforms</p>
+
+            <!--Sign up end-->
+
+            <div class="social-media">
+             
+              
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              
+            </div>
+
+
+          </form>
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Login to your School Website
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="img/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Login to your School Website
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="img/register.svg" class="image" alt="" />
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <script type="module"></script>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="script.js"></script>
+<script src="login.js"></script>
+<script src="googlesign.js"></script>
+</html>
